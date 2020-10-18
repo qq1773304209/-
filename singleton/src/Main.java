@@ -1,3 +1,9 @@
+
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class Main {
     public static void main(String[] args) {
         M01 m01 = M01.getINSTANCE();
@@ -21,5 +27,10 @@ public class Main {
         int a=5;
         System.out.println(Integer.toBinaryString(~a));
         System.out.println("a 非的结果是："+(~a));
+
+
+        Date date = new Date();
+        DateFormat dataFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        System.out.println(dataFormat.format(date));
     }
 }
